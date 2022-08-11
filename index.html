@@ -6,37 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input types and tags</title>
+    <link rel="icon" type="images/x-icon" href="./images/favicon.ico">
+    <style>
+        .websiteBody {
+            /* css gradient syntax  */
+            background: rgb(100, 227, 123);
+            background: linear-gradient(90deg, rgba(100, 227, 123, 1) 0%, rgba(61, 152, 161, 1) 35%, rgba(170, 145, 181, 1) 59%, rgba(0, 245, 255, 1) 81%);
+        }
+
+        button {
+            padding: 10px 30px;
+        }
+
+        .submitBtn {
+            background-color: #90caf9;
+            color: #e3f2fd;
+        }
+
+        .submitBtn:hover {
+            cursor: pointer;
+        }
+
+        .resetBtn {
+            background-color: #ef5350;
+        }
+    </style>
 
 </head>
 
-<body>
+<body class="websiteBody">
     <form action="">
-        First name:
-        <input type="text" name="fname" placeholder="Enter your first name">
-        Last name:
-        <input type="text" name="lname" placeholder="Enter your last name">
-        Email:
-        <input type="email" name="email" placeholder="enter your email">
-        Password:
-        <input type="password" name="password" placeholder="password">
-        Phone Number:
-        <input type="phone" name="phone" placeholder="Enter your Phone number">
-        <br><br><br><br><br><br>
+        <div>
 
-        <picture>
-            <source media="(max-width:400px)"
-                srcset="https://i.pinimg.com/236x/67/1c/7c/671c7c5707e40c78c9894f8454ccb2f7.jpg">
-            <source media="(max-width:800px)"
-                srcset=" https://thumbs.dreamstime.com/b/landscape-nature-mountan-alps-rainbow-76824355.jpg">
+            <label for="fname">First Name:</label>
+            <input min="6" max="10" required type="text" name="fname" placeholder="Enter your first name" id="fname">
+        </div>
+        <div>
+            <div>
 
-            <img src="./images/3.jpg" alt="images">
-
-        </picture>
+                <label for="fname">First Name:</label>
+                <input min="6" max="10" required type="number" name="fname" placeholder="Enter your first name"
+                    id="fname">
 
 
+                <label for="email"> Email:</label>
 
+                <input type="email" name="email" placeholder="enter your email" id="email" required>
+            </div>
+            <div>
+
+                <label for="pass"> Password:</label>
+
+                <input type="password" name="password" placeholder="password" id="pass" required>
+            </div>
+            <div>
+
+                <label for="phone"> Phone :</label>
+                <input type="phone" name="phone" placeholder="Enter your Phone number" id="phone" required>
+            </div>
+            <button class="submitBtn" type="submit">Submit</button>
+            <button class="resetBtn" type="reset">Reset</button>
+
+            <div>
+                <label for="search">Search</label>
+                <input type="search" name="search " placeholder="Search here..." id="search">
+
+            </div>
+            <div>
+                <label for="color">Select Color</label>
+                <input type="color" name="color " id="color">
+
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" name="date " id="date">
+
+            </div>
+            <div>
+                <label for=" dateTime">Date Time</label>
+                <input type="datetime-local" name=" dateTime " id=" dateTime">
+
+            </div>
+            <div>
+                <label for=" file">File</label>
+                <input type="file" name=" file " id=" file" accept="image/png">
+
+            </div>
 
     </form>
+
+    <picture>
+        <source media="(max-width:400px)"
+            srcset="https://i.pinimg.com/236x/67/1c/7c/671c7c5707e40c78c9894f8454ccb2f7.jpg">
+        <source media="(max-width:800px)"
+            srcset=" https://thumbs.dreamstime.com/b/landscape-nature-mountan-alps-rainbow-76824355.jpg">
+
+        <img src="./images/3.jpg" alt="images">
+
+    </picture>
+
+
+
+
 
 </body>
 
